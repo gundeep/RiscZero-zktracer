@@ -5,6 +5,10 @@ edition = "2021"
 
 [workspace]
 
+
 [dependencies]
 # If you want to try (experimental) std support, add `features = [ "std" ]` to risc0-zkvm
-risc0-zkvm = { version = "0.19.1", default-features = false }
+risc0-zkvm = { version = "0.19.1", default-features = false, features = ["std"]}
+image = "0.23.14"
+num-traits = "0.2"
+rayon = "1.5.1"

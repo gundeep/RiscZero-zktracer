@@ -149,16 +149,16 @@ fn cast_ray(orig: &math::Vec3<f32>, dir: &math::Vec3<f32>, depth: u32) -> math::
             specular_light_intensity,
             specular_light_intensity,
         ) * material.albedo[1])
-        + (reflect_color * material.albedo[2])
-        + (refract_color * material.albedo[3])
+        //+ (reflect_color * material.albedo[2])
+        //+ (refract_color * material.albedo[3])
 }
 
 
 pub fn main() {
     // TODO: Implement your guest code here
 
-    const WIDTH: usize = 24;
-    const HEIGHT: usize = 24;
+    const WIDTH: usize = 64;
+    const HEIGHT: usize = 64;
     const FOV: f32 = 1.05;
 
     let mut framebuffer: Vec<math::Vec3<f32>> = vec![math::Vec3::default(); WIDTH * HEIGHT];
